@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>JS refactoring part 1</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,18 +9,16 @@
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>JS refactoring part 1</h1>
+		<p>We do what we must because we can.</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
+		<img src="pictures/hello.jpg" alt="" class="cover">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
 			-->
-		<style>
+		<!--<style>
 			#cover h2 {
 				margin:30px 0 0;
 				color:#FFF;
@@ -37,20 +35,68 @@
 				#cover p a {
 					color:#FFF;
 					}
-		</style>
+		</style>-->
 	</section>
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<img src="pictures/ref.jpg" alt="" class="cover">
 	</section>
+	<section class="slide">
+		<h2>Две мелкие причины:</h2>
+		<ol>
+			<li>Подготовка к обновление jQuery</li>
+			<li>Почистили код</li>
+			<li>Underscore -> Lodash</li>
+		</ol>
+	</section>
+	<!--<section class="slide" id="sexy">
+		<img src="pictures/ref_sexy.jpg" alt="" class="cover">
+		<style>
+			#sexy img {
+				width: 40%;
+			}
+		</style>
+	</section>-->
+	<section class="slide">
+		<h2>jQuery</h2>
+		<img src="pictures/evolution.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<ol>
+			<li>Апнули версию jQuery с до </li>
+			<li>Подготовились к jQuery v3</li>
+		</ol>
+	</section>
+	<section class="slide">
+		<h2>Подготовились к jQuery v3</h2>
+		<a target="_blank" href="https://jquery.com/upgrade-guide/3.0/">Guide</a>
+	</section>
+	<section class="slide">
+		<h2>jQuery</h2>
+		<img src="pictures/kitten.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Почистили код</h2>
+		<img src="pictures/cleaning.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Underscore -> Lodash: Плюсы</h2>
+		<ol>
+			<li>Скорость — ?</li>
+			<li class="next">Внятный Roadmap</li>
+			<li class="next">Частые релизы</li>
+			<li class="next">Много дополнительных функций</li>
+			<li class="next">Более активные сообщество и мэйнтейнеры</li>
+			<li class="next">100% покрытие кода тестами (врут)</li>
+			<li class="next"><a target="_blank" href="https://travis-ci.org/lodash/lodash">CI</a></li>
+		</ol>
+	</section>
+	<section class="slide">
+		<h2>Underscore -> Lodash: Минусы</h2>
+		<ol>
+			<li>Размер</li>
+		</ol>
+	</section>
+<!--
 	<section class="slide">
 		<h2>Plain text on your slides</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
@@ -170,17 +216,15 @@
 				height:0.72em;
 				}
 		</style>
-	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
+	</section>-->
+	<!--<p class="badge">
+		<a href="https://github.com/shower/shower">Я сделяль!</a>
+	</p>-->
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
 		-->
-	<div class="progress"></div>
+	<!--<div class="progress"></div>-->
 	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
